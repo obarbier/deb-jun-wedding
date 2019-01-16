@@ -514,8 +514,8 @@ h1, h2, h3, h4, h5, h6, figure {
   right: -14px;
   display: inline-block;
   border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
+  border-left: 14px solid rgba(0, 0, 0, 0.04);
+  border-right: 0 solid rgba(0, 0, 0, 0.04);
   border-bottom: 14px solid transparent;
   content: " ";
 }
@@ -662,6 +662,34 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
+}
+/*added*/
+.travel-accomodation-textbox{
+  margin:auto;
+  min-height: 300px;
+  background-color: #828282;
+  opacity:0.6;
+}
+
+.travel-accomodation-textbox p {
+	position: relative;
+    text-transform: uppercase;
+	text-align: center;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+	display: block;
+	vertical-align: middle;
+    color:rgb(255,255,255);
+}
+.travel-accomodation-textbox ul {
+    padding: 0;
+    margin: 0;
+}
+.travel-accomodation-textbox ul li {
+    list-style: none;
+    position: relative;
+	text-align: center;
 }
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li {
@@ -942,7 +970,9 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  opacity:0.6;
+  background: #828282;
+  /*background: rgba(241, 78, 149, 0.8);*/
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -984,9 +1014,10 @@ form label {
 }
 
 .simply-countdown > .simply-section .simply-word {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7); 
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: bold;
   /* words */
 }
 
@@ -1043,7 +1074,8 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: #f1b4b2;
+  /* color: #F14E95; */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1066,7 +1098,8 @@ form label {
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  color: #f1b4b2;
+  /* color: #F14E95; */
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1181,7 +1214,8 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #f1b4b2;
+  /*color: #F14E95;*/
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
