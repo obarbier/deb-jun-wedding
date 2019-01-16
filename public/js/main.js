@@ -60,6 +60,17 @@
 
 	    	}
 		});
+		$("#fh5co-offcanvas li a").click(function (){
+			if ( $('body').hasClass('overflow offcanvas') ) {
+				$('body').removeClass('overflow offcanvas');
+			} else {
+				$('body').addClass('overflow offcanvas');
+			}
+				$('.js-fh5co-nav-toggle').toggleClass('active')
+				event.preventDefault();
+  		// $('#fh5co-offcanvas').offcanvas("hide");
+
+});
 	};
 
 
